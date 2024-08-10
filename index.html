@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados do Fornecedor</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://style.fluig.com/css/fluig-style-guide.min.css">
+    <script src="https://style.fluig.com/js/fluig-style-guide.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+
+
+
+</head>
+
+<body>
+    <h2 id="titulo">CADASTRO FORNECEDOR/PRODUTO</h2>
+
+    <div class="container fluig-style-guide">
+        <form name="Dados do fornecedor" class="dados-fornecedor">
+            <div class="campo-formulario">
+                <h4 class="nome-formulario">Dados do Fornecedor</h4>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="razao-social">Razão Social</label>
+                    <input type="text" class="form-control" id="razao-social" name="razao-social" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="cnpj">CNPJ</label>
+                    <input type="text" class="form-control" id="cnpj" name="cnpj" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="nome-fantasia">Nome Fantasia</label>
+                    <input type="text" class="form-control" id="nome-fantasia" name="nome-fantasia" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inscricao-estadual">Inscrição Estadual</label>
+                    <input type="text" class="form-control" id="inscricao-estadual" name="inscricao-estadual">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="cep">CEP</label>
+                    <input type="text" class="form-control" id="cep" name="cep" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inscricao-municipal">Inscrição Municipal</label>
+                    <input type="text" class="form-control" id="inscricao-municipal" name="inscricao-municipal">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-8">
+                    <label for="endereco">Endereço</label>
+                    <input type="text" class="form-control" id="endereco" name="endereco" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="numero">Número</label>
+                    <input type="text" class="form-control" id="numero" name="numero" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                    <label for="complemento">Complemento</label>
+                    <input type="text" class="form-control" id="complemento" name="complemento" maxlength="100">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="bairro">Bairro</label>
+                    <input type="text" class="form-control" id="bairro" name="bairro" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="municipio">Município</label>
+                    <input type="text" class="form-control" id="municipio" name="municipio" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="estado">Estado</label>
+                    <input type="text" class="form-control" id="estado" name="estado" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="nome-contato">Nome da Pessoa de Contato</label>
+                    <input type="text" class="form-control" id="nome-contato" name="nome-contato" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="telefone">Telefone</label>
+                    <input type="text" class="form-control" id="telefone" name="telefone" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="email">E-mail</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="container fluig-style-guide">
+        <div class="produtos">
+            <form class="formulario-produto1">
+                <div class="campo-formulario">
+                    <h4 class="nome-formulario">Produtos</h4>
+                </div>
+                <div class="div-inputs">
+                    <div class="lixeira2">
+                        <button type="button" id="limpar-dados">
+                            <img src="images/lixeira.PNG" alt="Icone lixeiro" class="icon-lixeira">
+                        </button>
+                    </div>
+
+                    <div class="produto-1 container2">
+                        <div class="div-caixa">
+                            <img src="images/caixa.PNG" alt="Icone Caixa" class="caixa">
+                        </div>
+                        <div class="div-formulario">
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="produto">Produto</label>
+                                    <input type="text" class="form-control" id="produto1" name="produto" maxlength="50"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-xs-3">
+                                    <label for="unidade-medida">UND. Medida</label>
+                                    <select class="selecionar" name="unidade-medida" id="unidade-medida" required>
+                                        <option value="opcao1">Selecionar</option>
+                                        <option value="opcao2">Quilograma(kg)</option>
+                                        <option value="opcao3">Grama(g)</option>
+                                        <option value="opcao3">Miligrama(mg)</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-3">
+                                    <label for="municipio">QDTDE. em Estoque</label>
+                                    <input type="text" class="form-control" id="estoque" name="estoque" required>
+                                </div>
+                                <div class="form-group col-md-3">
+                                    <label for="estado">Valor Unitário</label>
+                                    <input type="text" class="form-control" id="valor-unitario" name="valor-unitario"
+                                        required>
+                                </div>
+                                <div class="form-group col-md-3">
+                                    <label for="estado">Valor Total</label>
+                                    <input type="text" class="form-control" id="valor-total" name="valor-total" disabled
+                                        required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <br>
+
+
+            <form class="formulario-produto2">
+                <div class="div-inputs">
+                    <div class="lixeira2">
+                        <button type="button" id="limpar-dados2">
+                            <img src="images/lixeira.PNG" alt="Icone lixeiro" class="icon-lixeira">
+                        </button>
+                    </div>
+                    <div class="produto-2 container2">
+                        <div class="div-caixa">
+                            <img src="images/caixa.PNG" alt="Icone Caixa" class="caixa">
+                        </div>
+                        <div class="div-formulario">
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="produto">Produto</label>
+                                    <input type="text" class="form-control" id="produto2" name="produto" maxlength="50">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-xs-3">
+                                    <label for="unidade-medida">UND. Medida</label>
+                                    <select class="selecionar" name="unidade-medida" id="unidade-medida2">
+                                        <option value="opcao1">Selecionar</option>
+                                        <option value="opcao2">Quilograma(kg)</option>
+                                        <option value="opcao3">Grama(g)</option>
+                                        <option value="opcao3">Miligrama(mg)</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-3">
+                                    <label for="estoque">QDTDE. em Estoque</label>
+                                    <input type="text" class="form-control" id="estoque2" name="estoque2" required>
+                                </div>
+                                <div class="form-group col-md-3">
+                                    <label for="valor-unitario">Valor Unitário</label>
+                                    <input type="text" class="form-control" id="valor-unitario2" name="valor-unitario2"
+                                        required>
+                                </div>
+                                <div class="form-group col-md-3">
+                                    <label for="valor-total">Valor Total</label>
+                                    <input type="text" class="form-control" id="valor-total2" name="valor-total2"
+                                        disabled required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <div class="add-produto">
+                <button type="button" class="btn btn-success adicionar-produto">Adicionar
+                    Produto</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container fluig-style-guide">
+        <form class="itens">
+            <div class="campo-formulario">
+                <h4 class="nome-formulario">Anexos</h4>
+            </div>
+            <div class="anexos">
+                <div class="documentos">
+                    <div class="nome-borda">
+                        <div class="primeiro-anexo" data-index="1">
+                            <button type="button" class="botao-excluir">
+                                <img src="images/lixeira.PNG" alt="Icone lixeiro" class="icon-lixeira">
+                            </button>
+                            <button type="button">
+                                <img src="images/olho.PNG" alt="Icone olho" class="icon-olho botao-visualizar">
+                            </button>
+                            <div class="texto-anexo">
+                                <p>Nenhum documento anexado</p>
+                            </div>
+                        </div>
+                        <div class="segundo-anexo" data-index="2">
+                            <button type="button" class="botao-excluir">
+                                <img src="images/lixeira.PNG" alt="Icone lixeiro" class="icon-lixeira">
+                            </button>
+                            <button type="button">
+                                <img src="images/olho.PNG" alt="Icone olho" class="icon-olho botao-visualizar">
+                            </button>
+                            <div class="texto-anexo">
+                                <p>Nenhum documento anexado</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="div-botao">
+                    <button type="button" class="btn btn-success incluir-anexo">Incluir
+                        Anexo</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+
+
+    <div class="salvar">
+        <button type="button" class="btn btn-success salvar-fornecedor" onclick="">Salvar Fornecedor</button>
+    </div>
+
+    <div id="loading" class="modal" style="display: none;">
+        <div class="circulo">
+            <div class="spinner"></div>
+            <p>Enviando...</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
